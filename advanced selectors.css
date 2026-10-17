@@ -1,0 +1,74 @@
+body {
+    text-align: justify;
+    background-color: #c3cfe2;
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+article {
+    border: 3px solid rgb(110, 249, 184);
+    background-color: #e3e8ef;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50vw;
+}
+
+article:hover {
+    width: 50.5vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.delete:hover {
+    background-color: red;
+    outline: red;
+}
+
+article:nth-of-type(1) {
+    border-color: pink;
+    background-color: rgb(250, 227, 231);
+}
+
+article:nth-of-type(2) {
+    border-color: purple;
+    background-color: rgb(251, 218, 251);
+}
+
+article:nth-of-type(3) {
+    border-color: greenyellow;
+    background-color: rgb(231, 246, 208);
+}
+
+article:nth-of-type(4) {
+    border-color: blue;
+    background-color: rgb(205, 205, 242);
+}
+
+article:nth-of-type(5) {
+    border-color: red;
+    background-color: rgb(251, 215, 215);
+}
+
+h3::first-letter {
+    font-size: 25px;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+article:has(.delete input:checked) {
+    display: none;
+}
+
+article:has(.status:checked) {
+    background-color: rgb(28, 28, 49);
+    border: rgb(83, 83, 134) 3px solid;
+    color: white;
+}
